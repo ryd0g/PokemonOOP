@@ -16,10 +16,12 @@ class Pokedex:
         pokemon = Pokemon(pokemon_name, pokemon_type)
         pokemon_move = input('Enter its signature move: ')
         pokemon.add_moves(pokemon_move)
-        trainer_list = [trainer_name, trainer_age, trainer, city]
+        print('Thank you for your information!')
+        print('Here is your entry: ')
+        trainer_list = ['Name: ' + trainer_name, 'Age: ' + trainer_age, 'City: ' + trainer_city]
         for i in trainer_list:
             print(i)
-        pokemon_list = [pokemon_name, pokemon_type, pokemon_move]
+        pokemon_list = ['Pokemon: ' + pokemon_name, 'Type: ' + pokemon_type, 'Signature Move: ' + pokemon_move]
         for i in pokemon_list:
             print(i)
 
