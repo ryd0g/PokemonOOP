@@ -9,9 +9,5 @@ class Pokemon:
     def add_moves(self, move):
         self.moves.append(move)
 
-pokemon = Pokemon('Pikachu', 'Electric')
-pokemon.add_moves('thunderbolt')
-pokemon.intro()
-
 
 
