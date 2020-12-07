@@ -1,3 +1,4 @@
 class Move:
-    def __init__(self, name):
+    def __init__(self, name, type):
         self.name = name
+        self.type = type
