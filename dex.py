@@ -17,8 +17,10 @@ class Pokedex:
         pokemon_name = input('What is the name of your pokemon? ')
         pokemon_type = input('What type is your pokemon? ')
         pokemon = Pokemon(pokemon_name, pokemon_type)
-        pokemon_move = input('Enter its signature move: ')
-        pokemon.add_moves(pokemon_move)
+        move_name = input('Enter its signature move: ')
+        move_type = input('Enter the move type: ')
+        move = Move(move_name, move_type)
+        pokemon.add_moves(move_name)
         print('Thank you for your information!')
         print('Here is your entry: ')
         #creates list of trainer attributes
@@ -26,7 +28,7 @@ class Pokedex:
         for i in trainer_list:
             print(i)
         #creates list for pokemon attributes
-        pokemon_list = ['Pokemon: ' + pokemon_name, 'Type: ' + pokemon_type, 'Signature Move: ' + pokemon_move]
+        pokemon_list = ['Pokemon: ' + pokemon_name, 'Type: ' + pokemon_type, 'Signature Move: ' + move_name, 'Move Type: ' + move_type]
         for i in pokemon_list:
             print(i)
 
